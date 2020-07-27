@@ -9,10 +9,10 @@ body {
 }
 
 .app {
-  padding: var(--gutter) 0;
+  padding: 40px 0;
   display: grid;
-  grid-gap: var(--gutter) 0;
-  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  grid-gap: 80px 0;
+  grid-template-columns: 40px 1fr 40px;
   align-content: start;
 }
 
@@ -26,14 +26,14 @@ body {
 
 .hs {
   display: grid;
-  grid-gap: calc(var(--gutter) / 2);
+  grid-gap: 30px;
   grid-template-columns: repeat(6, calc(40% - 80px ));
-  grid-template-rows: 500px;
+  grid-template-rows: 450px;
   
   overflow-x: scroll;
   scroll-snap-type: x proximity;
-  padding-bottom: calc(.75 * var(--gutter));
-  margin-bottom: calc(-.25 * var(--gutter));
+  padding-bottom: calc(.75 * 120pt);
+  margin-bottom: calc(-.25 * 120pt);
 }
 
 .hs > li:last-child {
@@ -81,3 +81,16 @@ h3 {
   background: #fff;
   border-radius: 1px;
 }
+
+.wrapper{font-family:didot;width: 80%;margin: 0 auto;position:relative;}
+img{opacity: 1;transition: .5s ease;}
+.content{position: absolute;top:45%;left: 50%;transform: translate(-50%, -50%); overflow: hidden}
+.content 
+a{text-decoration: none; font-size: 12px;color:#fff;text-align: center;padding: 5px;cursor: pointer}
+.overlay{opacity: 0}
+.wrapper:hover img{opacity: .9}
+.wrapper:hover
+.overlay{opacity: 1}
+
+ 
+ 
