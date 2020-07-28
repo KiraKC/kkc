@@ -10,7 +10,7 @@ body {
 	font-family:didot;
 	font-style: italic;
 	text-align: center;
-	font-size:150%;
+	font-size:180%;
 	cursor: pointer
 }
 .subtitle-white {
@@ -18,7 +18,7 @@ body {
 	font-family:didot;
 	font-style: italic;
 	text-align: center;
-	font-size:100%;
+	font-size:120%;
 }
  
 :root {
@@ -144,5 +144,30 @@ h1, h2, h3 {
 }
 
 .pinterest {	
-	width: 500px;
+	position: sticky;
+	overflow-y: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+.social-links {	
+	color:white;
+	font-family:didot;
+	text-align: center;
+	font-size:100%;
+}
+
+.contact {	
+	text-align: center;
+	font-style: oblique;
+
+	position: static;
+	line-height: 300%;
+
+}
+
+.film-elements {	
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
