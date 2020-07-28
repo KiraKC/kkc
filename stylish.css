@@ -4,6 +4,21 @@ body {
 	margin-right: 100px;
 }
 
+.title{ 
+	text-decoration: none;
+	color:white;
+	font-family:didot;
+	text-align: center;
+	font-size:150%;
+	cursor: pointer
+}
+h2>a{
+	color:white;
+	font-family:didot;
+	text-align: center;
+	font-size:100%;
+}
+ 
 :root {
   --gutter: 80px;
 }
@@ -16,6 +31,7 @@ body {
   align-content: start;
 }
 
+.pinterest{position: absolute;top:45%;left: 50%;transform: translate(-50%, -50%); overflow: hidden}
 .app > * {
   grid-column: 2 / -2;
 }
@@ -82,11 +98,11 @@ h3 {
   border-radius: 1px;
 }
 
-.wrapper{font-family:didot;width: 80%;margin: 0 auto;position:relative;}
+.wrapper{font-family:didot;width: 100%;margin: 0 auto;position:relative;}
 img{opacity: 1;transition: .5s ease;}
 .content{position: absolute;top:45%;left: 50%;transform: translate(-50%, -50%); overflow: hidden}
 .content 
-a{text-decoration: none; font-size: 12px;color:#fff;text-align: center;padding: 5px;cursor: pointer}
+a{text-decoration: none; font-size: 15px;color:#fff;text-align: center;padding: 0px;cursor: pointer}
 .overlay{opacity: 0}
 .wrapper:hover img{opacity: .9}
 .wrapper:hover
