@@ -1,20 +1,22 @@
 body {
-	background-color: black;
-	margin-left: 100px;
-	margin-right: 100px;
+  background-color: black;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.title{ 
+.title-white { 
 	text-decoration: none;
 	color:white;
 	font-family:didot;
+	font-style: italic;
 	text-align: center;
 	font-size:150%;
 	cursor: pointer
 }
-h2>a{
+.subtitle-white {
 	color:white;
 	font-family:didot;
+	font-style: italic;
 	text-align: center;
 	font-size:100%;
 }
@@ -31,36 +33,32 @@ h2>a{
   align-content: start;
 }
 
-.pinterest{position: absolute;top:45%;left: 50%;transform: translate(-50%, -50%); overflow: hidden}
-.app > * {
+.app>* {
   grid-column: 2 / -2;
 }
 
-.app > .full {
+.app>.full {
   grid-column: 1 / -1;
 }
 
 .hs {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(6, calc(40% - 80px ));
+  grid-template-columns: repeat(6, calc(40% - 80px));
   grid-template-rows: 450px;
-  
   overflow-x: scroll;
   scroll-snap-type: x proximity;
   padding-bottom: calc(.75 * 120pt);
   margin-bottom: calc(-.25 * 120pt);
 }
 
-.hs > li:last-child {
+.hs>li:last-child {
   margin-right: 20px;
 }
 
-
 /* Demo styles */
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -74,9 +72,7 @@ ul {
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   margin: 0;
 }
 
@@ -86,10 +82,10 @@ h3 {
   overflow-y: hidden;
 }
 
-.hs > li,
-.item {
+.hs>li, .item {
   scroll-snap-align: center;
   display: flex;
+  position: relative;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
@@ -98,15 +94,55 @@ h3 {
   border-radius: 1px;
 }
 
-.wrapper{font-family:didot;width: 100%;margin: 0 auto;position:relative;}
-img{opacity: 1;transition: .5s ease;}
-.content{position: absolute;top:45%;left: 50%;transform: translate(-50%, -50%); overflow: hidden}
-.content 
-a{text-decoration: none; font-size: 15px;color:#fff;text-align: center;padding: 0px;cursor: pointer}
-.overlay{opacity: 0}
-.wrapper:hover img{opacity: .9}
-.wrapper:hover
-.overlay{opacity: 1}
+.website-title {
+  color: #FFF8FC;
+  font-family: didot;
+  font-size: 200%;
+  text-align: center;
+}
 
- 
- 
+.front-page-container {
+  position: relative;
+  height: 100%;
+}
+
+.front-page-centered-image {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+.front-page-container:hover .overlay {
+  opacity: 1;
+}
+
+.front-page-link {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pinterest {	
+	width: 500px;
+}
