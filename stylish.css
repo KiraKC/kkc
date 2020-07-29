@@ -11,7 +11,7 @@ body {
 	font-style: italic;
 	text-align: center;
 	font-size:180%;
-	cursor: pointer
+	cursor: url(cursor/moon+sparkle.png), auto;
 }
 .subtitle-white {
 	color:white;
@@ -44,7 +44,7 @@ body {
 .hs {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(6, calc(40% - 80px));
+  grid-template-columns: repeat(7, calc(40% - 80px));
   grid-template-rows: 450px;
   overflow-x: scroll;
   scroll-snap-type: x proximity;
@@ -171,3 +171,30 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+
+footer{
+	width: 100%;
+	height: 100%
+}
+.footer-box {	
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 5vh;
+	position: static;
+	line-height: 100%;
+	}
+		.footer-link{
+			color:white;
+			font-family:didot;
+			font-size:80%;
+			font-style: italic;
+			text-decoration: none;
+			cursor: url(cursor/sparkles_2728.png), auto;
+
+		}
+		.footer-text{
+			color:white;
+			font-family:didot;
+			font-size:80%;
+			text-decoration: none;
+		}
