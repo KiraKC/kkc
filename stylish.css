@@ -142,12 +142,24 @@ h1, h2, h3 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.about-text{
+	display: flex;
+	width:800px;
+	height: 200px;
+	align-items: flex-start;	
 
+}
+.widget{
+	text-align: center;
+	height: 600px;
+	width: 850px;
+}
 .pinterest {	
-	position: sticky;
+	position: static;
 	overflow-y: hidden;
 	height: 100%;
 	width: 100%;
+	display:inline-block
 }
 
 .social-links {	
@@ -198,3 +210,18 @@ footer{
 			font-size:80%;
 			text-decoration: none;
 		}
+
+.film-overlay{
+  display: block; 
+  position: fixed;
+  align-content: center;
+}		
+	.monitor{
+		margin-left: 10vw;
+		margin-right: 10vw;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		max-height: 90vh;
+		max-width: 120vw;
+		overflow: hidden;
+			}	
