@@ -44,7 +44,7 @@ body {
 .hs {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(7, calc(40% - 80px));
+  grid-template-columns: repeat(7, calc(30% - 40px));
   grid-template-rows: 450px;
   overflow-x: scroll;
   scroll-snap-type: x proximity;
