@@ -151,6 +151,7 @@ h1, h2, h3 {
 }
 
 .social-links {	
+	cursor: url(cursor/lemon_1f34b.png), auto;
 	color:white;
 	font-family:didot;
 	text-align: center;
@@ -160,7 +161,6 @@ h1, h2, h3 {
 .contact {	
 	text-align: center;
 	font-style: oblique;
-
 	position: static;
 	line-height: 300%;
 
@@ -189,7 +189,7 @@ footer{
 			font-size:80%;
 			font-style: italic;
 			text-decoration: none;
-			cursor: url(cursor/sparkles_2728.png), auto;
+			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 
 		}
 		.footer-text{
