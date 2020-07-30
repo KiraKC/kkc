@@ -34,6 +34,7 @@ header {
 	text-align: center;
 	font-size: 180%;
 	cursor: url(cursor/moon+sparkle.png), auto;
+	z-index: 9999;
 }
 
 .subtitle-white {
@@ -44,6 +45,7 @@ header {
 	font-size: 120%;
 	margin-top: 2%;
 	margin-bottom: 0px;
+	z-index: 9998;
 }
 
 :root {
@@ -250,6 +252,7 @@ footer {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: -1;
 }
 
 .monitor {
@@ -258,4 +261,5 @@ footer {
 	width: 80%;
 	height: auto;
 	overflow: hidden;
+	z-index: -1;
 }
