@@ -1,236 +1,261 @@
 body {
-  background-color: black;
-  margin-left: 100px;
-  margin-right: 100px;
+	background-color: black;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
-header{
+header {
 	margin-top: 3%;
 }
 
-.title-white { 
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: black;
+}
+
+#loader img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	max-width: 300px;
+}
+
+.title-white {
 	text-decoration: none;
-	color:white;
-	font-family:didot;
+	color: white;
+	font-family: didot;
 	font-style: italic;
 	text-align: center;
-	font-size:180%;
+	font-size: 180%;
 	cursor: url(cursor/moon+sparkle.png), auto;
 }
+
 .subtitle-white {
-	color:white;
-	font-family:didot;
+	color: white;
+	font-family: didot;
 	font-style: italic;
 	text-align: center;
-	font-size:120%;
+	font-size: 120%;
 	margin-top: 2%;
 	margin-bottom: 0px;
 }
- 
+
 :root {
-  --gutter: 80px;
+	--gutter: 80px;
 }
 
 .app {
-  padding: 40px 0;
-  display: grid;
-  grid-gap: 80px 0;
-  grid-template-columns: 40px 1fr 40px;
-  align-content: start;
+	padding: 40px 0;
+	display: grid;
+	grid-gap: 80px 0;
+	grid-template-columns: 40px 1fr 40px;
+	align-content: start;
 }
 
 .app>* {
-  grid-column: 2 / -2;
+	grid-column: 2 / -2;
 }
 
 .app>.full {
-  grid-column: 1 / -1;
+	grid-column: 1 / -1;
 }
 
 .hs {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(7, calc(30% - 40px));
-  grid-template-rows: 450px;
-  overflow-x: scroll;
-  scroll-snap-type: x proximity;
-  padding-bottom: calc(.75 * 120pt);
-  margin-bottom: calc(-.25 * 120pt);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(7, calc(30% - 40px));
+	grid-template-rows: 450px;
+	overflow-x: scroll;
+	scroll-snap-type: x proximity;
+	padding-bottom: calc(.75 * 120pt);
+	margin-bottom: calc(-.25 * 120pt);
 }
 
 .hs>li:last-child {
-  margin-right: 20px;
+	margin-right: 20px;
 }
 
 /* Demo styles */
 
 html, body {
-  height: 100%;
+	height: 100%;
 }
 
 body {
-  display: grid;
-  place-items: center;
+	display: grid;
+	place-items: center;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 h1, h2, h3 {
-  margin: 0;
+	margin: 0;
 }
 
 .app {
-  width: 100%;
-  height: 400px;
-  overflow-y: hidden;
+	width: 100%;
+	height: 400px;
+	overflow-y: hidden;
 }
 
 .hs>li, .item {
-  scroll-snap-align: center;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 1px;
-  max-height: 450px;
-  max-width: 800px;
+	scroll-snap-align: center;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	border-radius: 1px;
+	max-height: 450px;
+	max-width: 800px;
 }
 
 .website-title {
-  color: #FFF8FC;
-  font-family: didot;
-  font-size: 200%;
-  text-align: center;
+	color: #FFF8FC;
+	font-family: didot;
+	font-size: 200%;
+	text-align: center;
 }
 
 .front-page-container {
-  position: relative;
-  height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .front-page-centered-image {
-  display: block;
-  width: auto;
-  height: 100%;
+	display: block;
+	width: auto;
+	height: 100%;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .front-page-container:hover .overlay {
-  opacity: 1;
-  
+	opacity: 1;
 }
 
 .front-page-link {
-  color: white;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+	color: white;
+	font-size: 0.8rem;
+	letter-spacing: 3px;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
-.about-text{
-	display: flex;
-	width:800px;
-	height: 200px;
-	align-items: flex-start;	
 
+.about-text {
+	display: flex;
+	width: 800px;
+	height: 200px;
+	align-items: flex-start;
 }
-.widget{
+
+.widget {
 	text-align: center;
 	height: 600px;
 	width: 850px;
 }
-.pinterest {	
+
+.pinterest {
 	position: static;
 	overflow-y: hidden;
 	height: 100%;
 	width: 100%;
-	display:inline-block
+	display: inline-block
 }
 
-.social-links {	
+.social-links {
 	cursor: url(cursor/lemon_1f34b.png), auto;
-	color:white;
-	font-family:didot;
+	color: white;
+	font-family: didot;
 	text-align: center;
-	font-size:100%;
+	font-size: 100%;
 }
 
-.contact {	
+.contact {
 	text-align: center;
 	font-style: oblique;
 	position: static;
 	line-height: 300%;
-
 }
 
-.film-elements {	
-display: block;
-margin-left: auto;
-margin-right: auto;
+.film-elements {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-footer{
+footer {
 	width: 100%;
 	height: 80%
 }
-.footer-box {	
+
+.footer-box {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	height: 5vh;
 	position: static;
 	line-height: 100%;
-	}
-		.footer-link{
-			color:white;
-			font-family:didot;
-			font-size:80%;
-			font-style: italic;
-			text-decoration: none;
-			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+}
 
-		}
-		.footer-text{
-			color:white;
-			font-family:didot;
-			font-size:80%;
-			text-decoration: none;
-		}
+.footer-link {
+	color: white;
+	font-family: didot;
+	font-size: 80%;
+	font-style: italic;
+	text-decoration: none;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+}
 
-.film-overlay{
-  display: block; 
-  position: fixed;
-  align-content: center;
-}		
-	.monitor{
-		margin-left: 10vw;
-		margin-right: 10vw;
-		margin-top: 10vh;
-		margin-bottom: 10vh;
-		max-height: 90vh;
-		max-width: 120vw;
-		overflow: hidden;
-			}	
+.footer-text {
+	color: white;
+	font-family: didot;
+	font-size: 80%;
+	text-decoration: none;
+}
+
+/* film page */
+
+.film-overlay {
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.monitor {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+}
