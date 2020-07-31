@@ -16,11 +16,28 @@ footer {
 }
 
 .footer-box {
+	display: flex;
 	margin-top: 5%;
 	margin-bottom: 5%;
 	height: 5vh;
 	position: static;
-	line-height: 100%;
+	width: 100%;
+	justify-content: space-between;
+}
+.footer-left {
+	display: flex;
+	position: static;
+	line-height: 50%;
+	flex-direction: column;
+	align-items:flex-start;
+
+}
+.footer-right {
+	display: flex;
+	position: static;
+	line-height: 50%;
+	flex-direction: column;
+	align-items:flex-end;
 }
 
 .footer-link {
@@ -37,6 +54,8 @@ footer {
 	font-family: didot;
 	font-size: 80%;
 	text-decoration: none;
+	cursor: url(cursor/moon+sparkle.png), auto;
+
 }
 
 
@@ -208,12 +227,41 @@ h1, h2, h3 {
 }
 
 /* about page */
-
 .about-text {
+	margin-top:0%;
+	margin-left:5%;
 	display: flex;
 	width: 800px;
 	height: 200px;
 	align-items: flex-start;
+}
+
+.title-about {
+	text-decoration: none;
+	color: white;
+	font-family: didot;
+	font-style: italic;
+	text-align: center;
+	font-size: 500%;
+	cursor: url(cursor/moon+sparkle.png), auto;
+	z-index: 9999;
+}
+
+.subtitle-about {
+	color: white;
+	font-family: didot;
+	font-size: 120%;
+	margin-top: 2%;
+	margin-bottom: 0px;
+	z-index: 9998;
+	font-style:oblique; 
+	text-align: justify; 
+	margin-left: 2%;
+}
+
+.about-link:link{
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+	text-decoration: none;
 }
 
 /* inspiration page */
@@ -280,7 +328,7 @@ h1, h2, h3 {
 
 }
 .film-projects {
-	margin: 5%;
+	margin: 7%;
 	display: flex;
 	width: 100%;
 	height: 80%;
@@ -295,7 +343,7 @@ h1, h2, h3 {
 		font-style: italic;
 		text-align: left;
 		font-size: 120%;
-		cursor: url(cursor/moon+sparkle.png), auto;
+		cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 		z-index: 9999;
 	}
 
@@ -331,4 +379,6 @@ h1, h2, h3 {
 		margin-bottom: 0px;
 		z-index: -1;
 		text-decoration: none;
+		z-index: 9999;
+
 	}
