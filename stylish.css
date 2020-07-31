@@ -1,13 +1,46 @@
 body {
+	margin-top: 2%;
 	background-color: black;
 	margin-left: 100px;
 	margin-right: 100px;
+	overflow:hidden;
 }
 
 header {
-	margin-top: 3%;
+	margin-top: 5%;
 }
 
+footer {
+	width: 100%;
+	height: 80%
+}
+
+.footer-box {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 5vh;
+	position: static;
+	line-height: 100%;
+}
+
+.footer-link {
+	color: white;
+	font-family: didot;
+	font-size: 80%;
+	font-style: italic;
+	text-decoration: none;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+}
+
+.footer-text {
+	color: white;
+	font-family: didot;
+	font-size: 80%;
+	text-decoration: none;
+}
+
+
+/** loader */
 #loader {
 	position: fixed;
 	width: 100%;
@@ -25,6 +58,8 @@ header {
 	transform: translate(-50%, -50%);
 	max-width: 300px;
 }
+
+/** title*/
 
 .title-white {
 	text-decoration: none;
@@ -172,12 +207,16 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+/* about page */
+
 .about-text {
 	display: flex;
 	width: 800px;
 	height: 200px;
 	align-items: flex-start;
 }
+
+/* inspiration page */
 
 .widget {
 	text-align: center;
@@ -192,6 +231,8 @@ h1, h2, h3 {
 	width: 100%;
 	display: inline-block
 }
+
+/* contact page */
 
 .social-links {
 	cursor: url(cursor/lemon_1f34b.png), auto;
@@ -208,40 +249,6 @@ h1, h2, h3 {
 	line-height: 300%;
 }
 
-.film-elements {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-footer {
-	width: 100%;
-	height: 80%
-}
-
-.footer-box {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	height: 5vh;
-	position: static;
-	line-height: 100%;
-}
-
-.footer-link {
-	color: white;
-	font-family: didot;
-	font-size: 80%;
-	font-style: italic;
-	text-decoration: none;
-	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-}
-
-.footer-text {
-	color: white;
-	font-family: didot;
-	font-size: 80%;
-	text-decoration: none;
-}
 
 /* film page */
 
@@ -258,8 +265,70 @@ footer {
 .monitor {
 	margin-top: 2vh;
 	margin-bottom: 2vh;
-	width: 80%;
+	width: 100%;
 	height: auto;
 	overflow: hidden;
 	z-index: -1;
 }
+.film-project-list{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction:column;
+	width: 90%;
+	height: 90%;
+
+}
+.film-projects {
+	margin: 5%;
+	display: flex;
+	width: 100%;
+	height: 80%;
+	align-items: flex-start;
+}
+	.film-title {
+		margin-left: 5%;
+		width: 20%;
+		text-decoration: none;
+		color: azure;
+		font-family: didot;
+		font-style: italic;
+		text-align: left;
+		font-size: 120%;
+		cursor: url(cursor/moon+sparkle.png), auto;
+		z-index: 9999;
+	}
+
+	.film-details {
+	display: flex;
+	flex-direction:column;
+	width: 60%;
+	height: 100%;
+	margin-left: 20pt;
+	align-items: flex-start;
+
+	}
+	.film-details img{
+	width: 100%;
+	margin-left: 20pt;
+	margin-top: 2%;
+	margin-right: 2%;
+	margin-bottom: 0px;
+	z-index: -1;
+
+	}
+
+	.film-description {
+		width: 100%;
+		margin-left: 20pt;
+		color: white;
+		font-family: didot;
+		font-style: oblique;
+		line-height: 140%;
+		font-size: 75%;
+		margin-top: 5%;
+		margin-right: 2%;
+		margin-bottom: 0px;
+		z-index: -1;
+		text-decoration: none;
+	}
