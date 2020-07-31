@@ -377,8 +377,16 @@ h1, h2, h3 {
 		margin-top: 5%;
 		margin-right: 2%;
 		margin-bottom: 0px;
-		z-index: -1;
 		text-decoration: none;
 		z-index: 9999;
 
+	}
+
+	.mirrorshadow-inspo {
+		position: relative;
+		margin-top: 10vh;
+		margin-bottom: 2vh;
+		width: 100%;
+		height: auto;
+		z-index: -1;
 	}
