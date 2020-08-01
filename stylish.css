@@ -456,3 +456,108 @@ h1, h2, h3 {
 		text-decoration: none;
 		z-index: 9999;
 	}
+
+	/* dance */
+
+	.dance-project-list{
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex-direction:row;
+		width: 100%;
+		height: 100%;
+	
+	}
+	.dance-projects {
+		display: flex;
+		width: 100%;
+		height: 70%;
+		align-items: flex-end;
+
+	}
+		.dance-title {
+			width: 20%;
+			text-decoration: none;
+			color: white;
+			font-family: didot;
+			font-style: italic;
+			text-align: right;
+			font-size: 700%;
+			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+			z-index: 9999;
+		}
+	
+		.dance-details {
+		display: static;
+		width: auto;
+		height: 100%;
+		z-index: -1;
+
+		}
+		.dance-details img{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 5%;
+			z-index: -1;
+
+			}
+
+		.stage-project-list{
+			align-self:center;
+			margin-top:20%;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			flex-direction:column;
+			width: 100%;
+			height: 100%;
+		
+		}
+		.stage-projects {
+			display: flex;
+			width: 100%;
+			height: 60%;
+			align-items: flex-start;
+		}
+			.stage-title {
+				width: 30%;
+				text-decoration: none;
+				color: burlywood;
+				font-family: didot;
+				font-style: italic;
+				text-align: right;
+				font-size: 500%;
+				z-index: 9999;
+			}
+		
+			.stage-details {
+			display: static;
+			width: auto;
+			height: 100%;
+			z-index: -1;		
+			}
+
+		.stage-details img{
+		width: 70%;
+		height: auto;
+		margin-top: 5%;
+		margin-right: 2%;
+		margin-bottom: 0px;
+		z-index: -1;
+		}
+	
+
+
+		.stage-description {
+			width: 100%;
+			color: burlywood;
+			font-family: didot;
+			font-style: oblique;
+			line-height: 140%;
+			font-size: 75%;
+			margin-top: 5%;
+			margin-right: 2%;
+			text-decoration: none;
+			z-index: 9999;
+	
+		}
