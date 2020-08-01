@@ -7,7 +7,7 @@ body {
 }
 
 header {
-	margin-top: 5%;
+	margin-top: 8%;
 }
 
 footer {
@@ -81,6 +81,7 @@ footer {
 /** title*/
 
 .title-white {
+	margin-top: 20%;
 	text-decoration: none;
 	color: white;
 	font-family: didot;
@@ -267,9 +268,11 @@ h1, h2, h3 {
 /* inspiration page */
 
 .widget {
+	display:flex;
+	margin-top: 5vh;
 	text-align: center;
-	height: 600px;
-	width: 850px;
+	height: 100%;
+	width: 100%;
 }
 
 .pinterest {
@@ -277,7 +280,7 @@ h1, h2, h3 {
 	overflow-y: hidden;
 	height: 100%;
 	width: 100%;
-	display: inline-block
+	display: inline-block;
 }
 
 /* contact page */
@@ -328,7 +331,7 @@ h1, h2, h3 {
 
 }
 .film-projects {
-	margin: 6%;
+	margin: 5%;
 	display: flex;
 	width: 100%;
 	height: 80%;
@@ -383,8 +386,7 @@ h1, h2, h3 {
 
 	.mirrorshadow-inspo {
 		position: relative;
-		margin-top: 10vh;
-		margin-bottom: 2vh;
+		margin-top: 2vh;
 		width: 100%;
 		height: auto;
 		z-index: -1;
