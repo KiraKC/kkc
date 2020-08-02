@@ -75,7 +75,7 @@ footer {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	max-width: 300px;
+	max-width: 200px;
 }
 
 /** title*/
@@ -127,7 +127,7 @@ footer {
 	display: grid;
 	grid-gap: 30px;
 	grid-template-columns: repeat(7, calc(30% - 40px));
-	grid-template-rows: 450px;
+	grid-template-rows: 430px;
 	overflow-x: scroll;
 	scroll-snap-type: x proximity;
 	padding-bottom: calc(.75 * 120pt);
@@ -228,7 +228,16 @@ h1, h2, h3 {
 }
 
 /* about page */
-.about-text {
+.bg {
+	background-image: url("images_gifs/2.png");
+  
+	height: 100%; 
+  
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  .about-text {
 	margin-top:0%;
 	margin-left:5%;
 	display: flex;
@@ -269,7 +278,6 @@ h1, h2, h3 {
 
 .widget {
 	display:flex;
-	margin-top: 5vh;
 	text-align: center;
 	height: 100%;
 	width: 100%;
@@ -365,7 +373,8 @@ h1, h2, h3 {
 	margin-right: 2%;
 	margin-bottom: 0px;
 	z-index: -1;
-
+	-webkit-user-drag: none;
+	-moz-user-select: none;
 	}
 
 	.film-description {
@@ -440,6 +449,8 @@ h1, h2, h3 {
 	margin-right: 2%;
 	margin-bottom: 0px;
 	z-index: -1;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
 
 	}
 
@@ -499,6 +510,7 @@ h1, h2, h3 {
 			margin-bottom: 5%;
 			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 			-webkit-user-drag: none;
+			-moz-user-select: none;
 		}
 
 		.stage-project-list{
@@ -533,18 +545,18 @@ h1, h2, h3 {
 			display: static;
 			width: auto;
 			height: 100%;
-			z-index: -1;		
 			}
-
+			  
 		.stage-details img{
 		width: 70%;
 		height: auto;
 		margin-top: 5%;
 		margin-right: 2%;
 		margin-bottom: 0px;
-		z-index: -1;
+		flex-shrink: 0;
+		-webkit-user-drag: none;
+		-moz-user-select: none;
 		}
-	
 
 
 		.stage-description {
@@ -558,5 +570,7 @@ h1, h2, h3 {
 			margin-right: 2%;
 			text-decoration: none;
 			z-index: 9999;
-	
 		}
+
+  
+  
