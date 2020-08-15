@@ -54,7 +54,7 @@ footer {
 	font-family: didot;
 	font-size: 80%;
 	text-decoration: none;
-	cursor: default;
+	cursor:url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 
 }
 
@@ -126,7 +126,7 @@ footer {
 .hs {
 	display: grid;
 	grid-gap: 30px;
-	grid-template-columns: repeat(7, calc(30% - 40px));
+	grid-template-columns: repeat(6, calc(30% - 40px));
 	grid-template-rows: 430px;
 	overflow-x: scroll;
 	scroll-snap-type: x proximity;
@@ -578,9 +578,8 @@ h1, h2, h3 {
 	cursor:url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 }
 
-
 .popup{
-    background:rgba(0,0,0,.3);
+    background:rgba(0, 0, 0, 0.5);
     display:none;
     height:100%;
     position:fixed;
@@ -599,16 +598,16 @@ h1, h2, h3 {
     display: inline-block;
     height: auto;
     vertical-align: middle;
-	width: auto;
-	height: 100%;
+	width: 15%;
+	height: auto;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	transition: all 1s ease-in-out;    
-	position: relative;
-    padding: 15px 5%;
+	padding: 1px 5%;
+	transition: all 2s ease-in-out;    
 }
 
 		  
@@ -623,44 +622,47 @@ h1, h2, h3 {
 			color:black;
 		  }
 		  .popupClose:hover {
-			color: pink;
+			color: powderblue;
+			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+
 		  }
 		  .popup .content {
-			margin: 10%;
-			overflow: auto;
+			margin-top: 20%;
+			margin-bottom: 10%;
+			overflow: show;
+		  }
+
+		  .popup .whitespace {
+			min-height: 20px;
 		  }
 		  
 		  .nav-title {
-			  text-align: center;
 			  text-decoration: none;
 			  color: black;
 			font-size: 100%;
 		  }
 
 		  .nav-text{
-			margin-top: 8rem;
 			color: black;
-			font-family: didot;
 			font-size: 90%;
 			font-style: italic;
 			text-decoration: none;
+			text-transform: uppercase;
 			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 		  }
 
 		  .nav-text:hover{
-			color: rgb(255, 217, 243);
+			color: powderblue;
 		  }
 
 		  .nav-subtext{
 			color: black;
-			font-family: didot;
 			font-size: 80%;
 			font-style: italic;
 			text-decoration: none;
-			margin-left:1rem;
 			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 		  }
 
 		  .nav-subtext:hover{
-			color: rgb(255, 217, 243);
+			color: powderblue;
 		  }
