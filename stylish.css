@@ -597,7 +597,8 @@ h1, h2, h3 {
     background-color: #fff;
     display: inline-block;
     height: auto;
-    vertical-align: middle;
+	vertical-align: middle;
+	min-width:200px;
 	width: 15%;
 	height: auto;
 	position: fixed;
