@@ -573,5 +573,94 @@ h1, h2, h3 {
 			z-index: 9999;
 		}
 
-  
-  
+/* pop-up page */
+.trigger_popup{
+	cursor:url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+}
+
+
+.popup{
+    background:rgba(0,0,0,.3);
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.popup .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.popup > div {
+    background-color: #fff;
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+	width: auto;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: all 1s ease-in-out;    
+	position: relative;
+    padding: 15px 5%;
+}
+
+		  
+		  .popupClose {
+			position: absolute;
+			top: 20px;
+			right: 30px;
+			transition: all 100ms;
+			font-size: 20px;
+			font-weight: auto;
+			text-decoration: none;
+			color:black;
+		  }
+		  .popupClose:hover {
+			color: pink;
+		  }
+		  .popup .content {
+			margin: 10%;
+			overflow: auto;
+		  }
+		  
+		  .nav-title {
+			  text-align: center;
+			  text-decoration: none;
+			  color: black;
+			font-size: 100%;
+		  }
+
+		  .nav-text{
+			margin-top: 8rem;
+			color: black;
+			font-family: didot;
+			font-size: 90%;
+			font-style: italic;
+			text-decoration: none;
+			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+		  }
+
+		  .nav-text:hover{
+			color: rgb(255, 217, 243);
+		  }
+
+		  .nav-subtext{
+			color: black;
+			font-family: didot;
+			font-size: 80%;
+			font-style: italic;
+			text-decoration: none;
+			margin-left:1rem;
+			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+		  }
+
+		  .nav-subtext:hover{
+			color: rgb(255, 217, 243);
+		  }

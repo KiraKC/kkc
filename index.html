@@ -8,10 +8,23 @@
 	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
 		rel="stylesheet">
 	<script>
-	function hideLoader() {
+		function hideLoader() {
 			$('#loader').delay(1400).fadeOut();
 		}
 		$(window).ready(hideLoader);
+	</script>
+	<script>
+		$(window).load(function () {
+			$(".trigger_popup").click(function () {
+				$('.popup').show();
+			});
+			$('.popup').click(function () {
+				$('.popup').hide();
+			});
+			$('.popupClose').click(function () {
+				$('.popup').hide();
+			});
+		});
 	</script>
 </head>
 
@@ -84,23 +97,46 @@
 							</div>
 						</div>
 					</li>
-
 				</ul>
 			</div>
 		</div>
 
+
+		<div class="popup">
+			<span class="helper"></span>
+			<div>
+				<div class="popupClose">&times;</div>
+				<div class="content">
+					<p class="nav-title"> NAVIGATION DETAILS </p><br>
+					<a class="nav-text" href="https://kirakellyclarke.com"> H O M E </a> <br>
+					<a class="nav-text" href="about/overview.html"> About </a> <br>
+					<a class="nav-text" href="computation/overview.html"> Computation </a> <br>
+					<a class="nav-text" href="filmmaking/overview.html"> Film </a> <br>
+					<a class="nav-text" href="dance/overview.html"> Dance </a> <br>
+					<a class="nav-subtext" href="dance/stage.html"> on stage </a> <br>
+					<a class="nav-subtext" href="dance/screen.html"> on screen </a> <br>
+					<a class="nav-text" href="thoughts/overview.html"> Thoughts </a> <br>
+					<a class="nav-text" href="inspiration/overview.html"> Inspiration </a> <br>
+					<a class="nav-subtext" href="inspiration/moodboards.html"> moodboards </a> <br>
+					<a class="nav-text" href="contact/overview.html"> Contact </a> <br>
+				</div>			
+			</div>
+		</div>
+
+		<div class="footer-box">
+			<div class="footer-left">
+				<a class="footer-text" href="http://kirakellyclarke.com"> Kira Kelly Clarke © 2020</a> <br>
+				<a href="/contact/overview.html" class="footer-link"> contact </a>
+			</div>
+			<div class="footer-right">
+				<div class="footer-text" class="trigger_popup"> Navigate this website </div> <br>
+				<a href="image-credits.html" class="footer-link"> image credits </a>
+			</div>
+		</div>
 </body>
+
 <footer>
-	<div class="footer-box">
-		<div class="footer-left">
-					<a class="footer-text" href="http://kirakellyclarke.com"> Kira Kelly Clarke © 2020</a> <br>
-					<a href="/contact/overview.html" class="footer-link"> contact </a>
-		</div>
-		<div class="footer-right">
-			<a class="footer-text" href="http://kirakellyclarke.com"> Thank you for visiting!</a> <br>
-			<a href="image-credits.html" class="footer-link"> image credits </a>
-		</div>
-	</div>
+
 </footer>
 
 </html>
