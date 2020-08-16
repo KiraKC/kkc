@@ -3,7 +3,7 @@ body {
 	background-color: black;
 	margin-left: 100px;
 	margin-right: 100px;
-	overflow:hidden;
+	overflow: hidden;
 }
 
 header {
@@ -24,20 +24,21 @@ footer {
 	width: 100%;
 	justify-content: space-between;
 }
+
 .footer-left {
 	display: flex;
 	position: static;
 	line-height: 50%;
 	flex-direction: column;
-	align-items:flex-start;
-
+	align-items: flex-start;
 }
+
 .footer-right {
 	display: flex;
 	position: static;
 	line-height: 50%;
 	flex-direction: column;
-	align-items:flex-end;
+	align-items: flex-end;
 }
 
 .footer-link {
@@ -49,17 +50,24 @@ footer {
 	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 }
 
+.footer-link:hover {
+	color: rgb(247, 221, 225);
+}
+
 .footer-text {
 	color: white;
 	font-family: didot;
 	font-size: 80%;
 	text-decoration: none;
-	cursor:url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 }
 
+.footer-text:hover {
+	color: rgb(247, 221, 225);
+}
 
 /** loader */
+
 #loader {
 	position: fixed;
 	width: 100%;
@@ -75,7 +83,18 @@ footer {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	max-width: 200px;
+	max-width: 400px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
 }
 
 /** title*/
@@ -225,21 +244,22 @@ h1, h2, h3 {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
+	cursor: url(cursor/moon+sparkle.png), auto;
 }
 
 /* about page */
+
 .bg {
 	background-image: url("images_gifs/2.png");
-  
-	height: 100%; 
-  
+	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-  }
-  .about-text {
-	margin-top:0%;
-	margin-left:5%;
+}
+
+.about-text {
+	margin-top: 0%;
+	margin-left: 5%;
 	display: flex;
 	width: 800px;
 	height: 200px;
@@ -264,12 +284,12 @@ h1, h2, h3 {
 	margin-top: 2%;
 	margin-bottom: 0px;
 	z-index: 9998;
-	font-style:oblique; 
-	text-align: justify; 
+	font-style: oblique;
+	text-align: justify;
 	margin-left: 2%;
 }
 
-.about-link:link{
+.about-link:link {
 	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 	text-decoration: none;
 }
@@ -277,7 +297,7 @@ h1, h2, h3 {
 /* inspiration page */
 
 .widget {
-	display:flex;
+	display: flex;
 	text-align: center;
 	height: 100%;
 	width: 100%;
@@ -308,7 +328,6 @@ h1, h2, h3 {
 	line-height: 300%;
 }
 
-
 /* film page */
 
 .film-overlay {
@@ -323,21 +342,33 @@ h1, h2, h3 {
 
 .monitor {
 	margin-top: 2vh;
-	margin-bottom:10vh;
+	margin-bottom: 10vh;
 	width: 98%;
 	height: auto;
 	overflow: hidden;
 	z-index: 9999;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
 }
-.film-project-list{
+
+.film-project-list {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	flex-direction:column;
+	flex-direction: column;
 	width: 100%;
 	height: 100%;
-
 }
+
 .film-projects {
 	margin: 5%;
 	display: flex;
@@ -345,28 +376,29 @@ h1, h2, h3 {
 	height: 80%;
 	align-items: flex-start;
 }
-	.film-title {
-		width: 30%;
-		text-decoration: none;
-		color: azure;
-		font-family: didot;
-		font-style: italic;
-		text-align: right;
-		font-size: 170%;
-		cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-		z-index: 9999;
-	}
 
-	.film-details {
+.film-title {
+	width: 30%;
+	text-decoration: none;
+	color: azure;
+	font-family: didot;
+	font-style: italic;
+	text-align: right;
+	font-size: 170%;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+	z-index: 9999;
+}
+
+.film-details {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	width: 60%;
 	height: 100%;
 	margin-left: 20pt;
 	align-items: flex-start;
+}
 
-	}
-	.film-details img{
+.film-details img {
 	width: 100%;
 	position: relative;
 	margin-left: 20pt;
@@ -374,44 +406,53 @@ h1, h2, h3 {
 	margin-right: 2%;
 	margin-bottom: 0px;
 	z-index: -1;
-	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
 	-moz-user-select: none;
-	}
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+}
 
-	.film-description {
-		width: 100%;
-		margin-left: 20pt;
-		color: white;
-		font-family: didot;
-		font-style: oblique;
-		line-height: 140%;
-		font-size: 75%;
-		margin-top: 5%;
-		margin-right: 2%;
-		margin-bottom: 0px;
-		text-decoration: none;
-		z-index: 9999;
+.film-description {
+	width: 100%;
+	margin-left: 20pt;
+	color: white;
+	font-family: didot;
+	font-style: oblique;
+	line-height: 140%;
+	font-size: 75%;
+	margin-top: 5%;
+	margin-right: 2%;
+	margin-bottom: 0px;
+	text-decoration: none;
+	z-index: 9999;
+}
 
-	}
-
-	.mirrorshadow-inspo {
-		position: relative;
-		margin-top: 2vh;
-		width: 100%;
-		height: auto;
-		z-index: -1;
-	}
+.mirrorshadow-inspo {
+	position: relative;
+	margin-top: 2vh;
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
 
 /* image credits page*/
-.credit-list{
+
+.credit-list {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	flex-direction:column;
+	flex-direction: column;
 	width: 100%;
 	height: 100%;
-
 }
+
 .credits {
 	margin-left: 20%;
 	margin: 5%;
@@ -420,30 +461,31 @@ h1, h2, h3 {
 	height: 80%;
 	align-items: flex-start;
 }
-	.credit-title {
-		margin-left: 10%;
-		margin-right: 0;
-		width: 20%;
-		text-decoration: none;
-		color: azure;
-		font-family: didot;
-		font-style: italic;
-		text-align: left;
-		font-size: 600%;
-		cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-		z-index: 9999;
-	}
 
-	.credit-details {
+.credit-title {
+	margin-left: 10%;
+	margin-right: 0;
+	width: 20%;
+	text-decoration: none;
+	color: azure;
+	font-family: didot;
+	font-style: italic;
+	text-align: left;
+	font-size: 600%;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+	z-index: 9999;
+}
+
+.credit-details {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	width: 60%;
 	height: 100%;
 	margin-left: 20pt;
 	align-items: flex-start;
+}
 
-	}
-	.credit-details img{
+.credit-details img {
 	width: 100%;
 	margin-left: 20pt;
 	margin-top: 2%;
@@ -452,154 +494,185 @@ h1, h2, h3 {
 	z-index: -1;
 	-webkit-user-drag: none;
 	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+}
 
-	}
+.credit-description {
+	width: 100%;
+	margin-left: 20pt;
+	color: white;
+	font-family: didot;
+	font-style: oblique;
+	line-height: 140%;
+	font-size: 80%;
+	margin-top: 5%;
+	margin-right: 2%;
+	text-decoration: none;
+	z-index: 9999;
+}
 
-	.credit-description {
-		width: 100%;
-		margin-left: 20pt;
-		color: white;
-		font-family: didot;
-		font-style: oblique;
-		line-height: 140%;
-		font-size: 80%;
-		margin-top: 5%;
-		margin-right: 2%;
-		text-decoration: none;
-		z-index: 9999;
-	}
+/* dance */
 
-	/* dance */
+.dance-project-list {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
 
-	.dance-project-list{
-		display: flex;
-		justify-content: start;
-		align-items: center;
-		flex-direction:row;
-		width: 100%;
-		height: 100%;
-	
-	}
-	.dance-projects {
-		display: flex;
-		width: 100%;
-		height: 70%;
-		align-items: baseline;
+.dance-projects {
+	display: flex;
+	width: 100%;
+	height: 70%;
+	align-items: baseline;
+}
 
-	}
-		.dance-title {
-			width: 20%;
-			text-decoration: none;
-			color: white;
-			font-family: didot;
-			font-style: italic;
-			text-align: right;
-			font-size: 700%;
-			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-			z-index: 9999;
-		}
-	
-		.dance-details {
-		display: static;
-		width: auto;
-		height: 100%;
+.dance-title {
+	width: 20%;
+	text-decoration: none;
+	color: white;
+	font-family: didot;
+	font-style: italic;
+	text-align: right;
+	font-size: 700%;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+	z-index: 9999;
+}
 
-		}
-		.dance-details img{
-			width: 100%;
-			height: 100%;
-			margin-bottom: 5%;
-			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-			-webkit-user-drag: none;
-			-moz-user-select: none;
-		}
+.dance-details {
+	display: static;
+	width: auto;
+	height: 100%;
+}
 
-		.stage-project-list{
-			align-self:center;
-			margin-top:20%;
-			display: flex;
-			justify-content: start;
-			align-items: center;
-			flex-direction:column;
-			width: 100%;
-			height: 100%;
-		
-		}
-		.stage-projects {
-			display: flex;
-			width: 100%;
-			height: 60%;
-			align-items: flex-start;
-		}
-			.stage-title {
-				width: 30%;
-				text-decoration: none;
-				color: burlywood;
-				font-family: didot;
-				font-style: italic;
-				text-align: right;
-				font-size: 500%;
-				z-index: 9999;
-			}
-		
-			.stage-details {
-			display: static;
-			width: auto;
-			height: 100%;
-			}
-			  
-		.stage-details img{
-		width: 70%;
-		height: auto;
-		margin-top: 5%;
-		margin-right: 2%;
-		margin-bottom: 0px;
-		flex-shrink: 0;
-		-webkit-user-drag: none;
-		-moz-user-select: none;
-		}
+.dance-details img {
+	width: 100%;
+	height: 100%;
+	flex-shrink: 0;
+	margin-bottom: 5%;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+}
 
+.stage-project-list {
+	margin-top: 5%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	overflow-x: scroll;
+	width: 100%;
+	height: auto;
+}
 
-		.stage-description {
-			width: 100%;
-			color: burlywood;
-			font-family: didot;
-			font-style: oblique;
-			line-height: 140%;
-			font-size: 75%;
-			margin-top: 5%;
-			margin-right: 2%;
-			text-decoration: none;
-			z-index: 9999;
-		}
+.stage-projects {
+	margin-left: 2%;
+	display: flex;
+	width: 80%;
+	height: auto;
+	align-items: flex-start;
+}
+
+.stage-title {
+	width: 10%;
+	text-decoration: none;
+	color: burlywood;
+	font-family: didot;
+	font-style: italic;
+	text-align: right;
+	font-size: 500%;
+	z-index: 9999;
+}
+
+.stage-details {
+	display: inline-flexbox;
+	width: auto;
+	height: 100%;
+}
+
+.stage-details img {
+	width: auto;
+	height: 350px;
+	margin-top: 5%;
+	margin-right: 2%;
+	flex-shrink: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+}
+
+.stage-description {
+	width: 100%;
+	color: burlywood;
+	font-family: didot;
+	font-style: oblique;
+	line-height: 140%;
+	font-size: 75%;
+	margin-top: 5%;
+	margin-right: 2%;
+	text-decoration: none;
+	z-index: 9999;
+}
 
 /* pop-up page */
-.trigger_popup{
-	cursor:url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+
+.trigger_popup {
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 }
 
-.popup{
-    background:rgba(0, 0, 0, 0.5);
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
+.popup {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	height: 100%;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
 }
-.popup .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.popup > div {
-    background-color: #fff;
-    display: inline-block;
-    height: auto;
+
+.popup .helper {
+	display: inline-block;
+	height: 100%;
 	vertical-align: middle;
-	min-width:200px;
-	width: 15%;
+}
+
+.popup>div {
+	background-color: #fff;
+	display: inline-block;
+	height: auto;
+	vertical-align: middle;
+	min-width: 200px;
+	width: 18%;
 	height: auto;
 	position: fixed;
 	top: 50%;
@@ -608,62 +681,61 @@ h1, h2, h3 {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	padding: 1px 5%;
-	transition: all 2s ease-in-out;    
+	transition: all 2s ease-in-out;
 }
 
-		  
-		  .popupClose {
-			position: absolute;
-			top: 20px;
-			right: 30px;
-			transition: all 100ms;
-			font-size: 20px;
-			font-weight: auto;
-			text-decoration: none;
-			color:black;
-		  }
-		  .popupClose:hover {
-			color: powderblue;
-			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+.popupClose {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 100ms;
+	font-size: 20px;
+	font-weight: auto;
+	text-decoration: none;
+	color: black;
+}
 
-		  }
-		  .popup .content {
-			margin-top: 20%;
-			margin-bottom: 10%;
-			overflow: show;
-		  }
+.popupClose:hover {
+	color: powderblue;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+}
 
-		  .popup .whitespace {
-			min-height: 20px;
-		  }
-		  
-		  .nav-title {
-			  text-decoration: none;
-			  color: black;
-			font-size: 100%;
-		  }
+.popup .content {
+	margin-top: 20%;
+	margin-bottom: 10%;
+	overflow: show;
+}
 
-		  .nav-text{
-			color: black;
-			font-size: 90%;
-			font-style: italic;
-			text-decoration: none;
-			text-transform: uppercase;
-			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-		  }
+.popup .whitespace {
+	min-height: 20px;
+}
 
-		  .nav-text:hover{
-			color: powderblue;
-		  }
+.nav-title {
+	text-decoration: none;
+	color: black;
+	font-size: 100%;
+}
 
-		  .nav-subtext{
-			color: black;
-			font-size: 80%;
-			font-style: italic;
-			text-decoration: none;
-			cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
-		  }
+.nav-text {
+	color: black;
+	font-size: 90%;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+}
 
-		  .nav-subtext:hover{
-			color: powderblue;
-		  }
+.nav-text:hover {
+	color: powderblue;
+}
+
+.nav-subtext {
+	color: black;
+	font-size: 80%;
+	font-style: italic;
+	text-decoration: none;
+	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
+}
+
+.nav-subtext:hover {
+	color: powderblue;
+}
