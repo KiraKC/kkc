@@ -539,6 +539,19 @@ h1, h2, h3 {
 	align-items: baseline;
 }
 
+@media (min-width:800px){
+
+	.dance-project-list {
+		display: block;
+		justify-content: center;
+	}
+	
+	.dance-projects {
+		display: block;
+		width: 300px;
+	}
+}
+
 .dance-title {
 	width: 20%;
 	text-decoration: none;
