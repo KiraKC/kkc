@@ -586,6 +586,10 @@ h1, h2, h3 {
 	height: auto;
 }
 
+.right-margin{
+	margin-right: 2vw;
+}
+
 .stage-projects {
 	margin-left: 2%;
 	display: flex;
@@ -610,6 +614,8 @@ h1, h2, h3 {
 	width: auto;
 	height: 100%;
 }
+
+
 
 .stage-details img {
 	width: auto;
