@@ -790,21 +790,21 @@ h1, h2, h3 {
 /* computation page */
 
 .project-grid {
-	margin-top: 10vw;
+	margin-top: 5vw;
 	margin-bottom: 5vw;
 	display: grid;
 	width: 90vw;
-	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-	grid-column-gap: 2vw;
+	grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+	grid-column-gap: 3vw;
 	grid-row-gap: 5vw;
 }
 
 .project-wrapper {
 	position: relative;
-	height: 300px;
+	height: 350px;
 	border-radius: 4px;
-	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
-	margin: 10px;
+	box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.25);
+	margin: 12px;
 }
 
 .browser-box {
@@ -819,8 +819,8 @@ h1, h2, h3 {
 }
 
 .browser-box-overlay {
-	background: linear-gradient(to left, rgba(255, 255, 255, 0.2) 0%,rgb(255, 255, 254) 60%,rgb(255, 255, 255) 100%);
-    background-blend-mode: multiply;
+	background: linear-gradient(to left, rgba(42,159,255,.2) 0%,rgba(14, 14, 14, 0.8) 80%,rgba(0, 0, 0, 1) 100%);
+	background-blend-mode: multiply;
 	opacity: 0.5;
 	position: absolute;
 	z-index: 99;
@@ -834,7 +834,7 @@ h1, h2, h3 {
 .tool-bar {
 	padding: 10px;
 	height: 15px;
-	background: #f1f1f1;
+	background: gainsboro;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 }
@@ -850,20 +850,21 @@ h1, h2, h3 {
 .column-left {
 	float: left;
 	width: 12vw;
+	margin-left: 4px;
 }
 
 .link-center {
 	margin-right: auto;
 	margin-left: auto;
 	background:white;
-	width: 50%;
+	width: 40%;
 	border-radius: 3px;
 	height:20px;
 	margin-bottom:2px;
 }
 
 a.project-link{
-	margin-right:2px;
+	margin-left:4px;
 	text-decoration: none;
 	color: dimgray;
 	font-family: helvetica;
@@ -876,7 +877,7 @@ a.project-link:hover{
 }
 
 .cs-project-content {
-	margin-top:30px;
+	margin-top:20px;
 	margin-bottom:0px;
 	position: absolute;
 	left: 30px;
@@ -887,22 +888,33 @@ a.project-link:hover{
 
 .cs-project-title {
 	text-decoration: none;
-	color: black;
-	font-family: helvetica;
-	font-size: 2rem;
+	color: white;
+	font-family: times;
+	font-size: 1.8rem;
+	line-height: 1;
 }
 
 .cs-project-subtitle {
 	text-decoration: none;
-	color: #093373;
-	font-family: helvetica;
+	color:lightblue;
+	font-family: times;
 	font-size: 1rem;
 }
 
 .cs-project-description {
 	margin-top: 1rem;
 	text-decoration: none;
-	color: black;
-	font-family: helvetica;
-	font-size: 0.5rem;
+	color: white;
+	font-family: times;
+	font-size: 0.8rem;
+}
+
+a.cs-description {
+	margin-top: 1rem;
+	text-decoration: none;
+	font-style: italic;
+	color: azure;
+	font-family: times;
+	font-size: 0.8rem;
+	cursor:pointer;
 }
