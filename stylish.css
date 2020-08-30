@@ -828,9 +828,9 @@ h1, h2, h3 {
 }
 
 .browser-box-overlay {
-	background: linear-gradient(to left, rgba(42,159,255,.2) 0%,rgba(14, 14, 14, 0.8) 80%,rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(-50deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.3),rgb(0, 0, 0,1));
 	background-blend-mode: multiply;
-	opacity: 0.5;
+	opacity: 0.8;
 	position: absolute;
 	z-index: 99;
 	width: 100%;
@@ -858,7 +858,7 @@ h1, h2, h3 {
 
 .column-left {
 	float: left;
-	width: 12vw;
+	width: 12%;
 	margin-left: 4px;
 }
 
@@ -873,7 +873,7 @@ h1, h2, h3 {
 }
 
 a.project-link{
-	margin-left:4px;
+	margin-left:1vw;
 	text-decoration: none;
 	color: dimgray;
 	font-family: helvetica;
@@ -892,7 +892,7 @@ a.project-link:hover{
 	left: 30px;
 	top: 10px;
 	z-index: 999;
-	width: 40%;
+	width: 60%;
 }
 
 .cs-project-title {
@@ -901,11 +901,12 @@ a.project-link:hover{
 	font-family: times;
 	font-size: 1.8rem;
 	line-height: 1;
+	width:100%;
 }
 
 .cs-project-subtitle {
 	text-decoration: none;
-	color:lightblue;
+	color:lavenderblush;
 	font-family: times;
 	font-size: 1rem;
 }
@@ -916,6 +917,8 @@ a.project-link:hover{
 	color: white;
 	font-family: times;
 	font-size: 0.8rem;
+	width:80%;
+
 }
 
 a.cs-description {
@@ -923,7 +926,6 @@ a.cs-description {
 	text-decoration: none;
 	font-style: italic;
 	color: azure;
-	font-family: times;
 	font-size: 0.8rem;
 	cursor:pointer;
 }
