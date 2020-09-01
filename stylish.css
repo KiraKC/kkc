@@ -694,6 +694,36 @@ h1, h2, h3 {
 	z-index: 9999;
 }
 
+/* inspiration page */
+a.moodboard-button{
+	margin:1rem;
+	border: 1px solid rgb(222, 156, 178);
+	background-color: transparent;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: rgb(222, 156, 178);
+	text-decoration: none;
+	text-align: center;
+	transition: all 0.2s;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	font-family: "Circular Std Bold";
+}
+
+a.moodboard-button:hover{
+	border: 1px solid rgb(222, 156, 178);
+	background-color: rgb(222, 156, 178);
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: white;
+	text-align: center;
+	transition: all 0.2s;
+}
+
 /* pop-up page */
 
 .trigger_popup {
