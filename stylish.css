@@ -191,7 +191,6 @@ footer {
 
 @media only screen and (max-width: 1000px) {
 	.hs {
-		display: grid;
 		grid-gap: 10px;
 		grid-template-rows: repeat(6, calc(50% - 20px));
 		grid-template-columns: 600px;
@@ -882,7 +881,7 @@ a.moodboard-button:hover{
 }
 
 .nav-text:hover {
-	color: powderblue;
+	color: grey;
 }
 
 .nav-subtext {
@@ -894,7 +893,7 @@ a.moodboard-button:hover{
 }
 
 .nav-subtext:hover {
-	color: powderblue;
+	color: gainsboro;
 } 
 
 /* computation page */
