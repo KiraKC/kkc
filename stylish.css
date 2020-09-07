@@ -189,6 +189,83 @@ footer {
 	min-width: 800px;
 }
 
+@media only screen and (max-width: 1000px) {
+	.hs {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-rows: repeat(6, calc(50% - 20px));
+		grid-template-columns: 600px;
+		overflow-y: scroll;
+		scroll-snap-type: y proximity;
+		padding-bottom: calc(.75 * 120pt);
+		min-width: 500px;	
+		overflow-x: hidden;
+	}
+	.app {
+		width: 100%;
+		height: 400px;
+		overflow-y: scroll;
+	}
+
+	.front-page-container {
+		position: relative;
+		height: 100%;
+	}
+	
+	.front-page-centered-image {
+		display: block;
+		width: auto;
+		height: 100%;
+	}
+	
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	
+	.front-page-link {
+		color: white;
+		font-size: 0.8rem;
+		letter-spacing: 3px;
+		text-decoration: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		cursor: url(cursor/moon+sparkle.png), auto;
+	}
+	.app {
+		width: 100%;
+		height: 500px;
+		overflow-y: scroll;
+	}
+	
+	.hs>li, .item {
+		scroll-snap-align: center;
+		display: flex;
+		position: relative;
+		overflow: hidden;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		background: black;
+		border-radius: 1px;
+		max-height: 450px;
+		max-width: 800px;
+	}
+  }
+
+
 .hs>li:last-child {
 	margin-right: 20px;
 }
