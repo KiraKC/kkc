@@ -1,6 +1,19 @@
-@import url(//db.onlinewebfonts.com/c/2d98f490df6dc039774b101701ce3aba?family=Circular+Std+Book);
-@import url(//db.onlinewebfonts.com/c/251039e6849ad977a8bfc40b564dce89?family=Didot);
-@import url(//db.onlinewebfonts.com/c/50fdb00bd31f40c13c4fab9f1de2387e?family=Didot);
+
+@font-face {
+    font-family: "Circular Std Book";
+    src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"),
+        url("/../fonts/circular_book/circular_book.woff") format("woff"),
+        url("/../fonts/circular_book/circular_book.otf") format("opentype"),
+        url("/../fonts/circular_book/circular_book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Didot";
+    src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"),
+        url("/../fonts/circular_book/circular_book.woff") format("woff"),
+        url("/../fonts/circular_book/circular_book.otf") format("opentype"),
+        url("/../fonts/circular_book/circular_book.ttf") format("truetype");
+}
 
 body {
 	margin-top: 2%;
