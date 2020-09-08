@@ -1,18 +1,11 @@
-
 @font-face {
-    font-family: "Circular Std Book";
-    src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"),
-        url("/../fonts/circular_book/circular_book.woff") format("woff"),
-        url("/../fonts/circular_book/circular_book.otf") format("opentype"),
-        url("/../fonts/circular_book/circular_book.ttf") format("truetype");
+	font-family: "Circular Std Book";
+	src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"), url("/../fonts/circular_book/circular_book.woff") format("woff"), url("/../fonts/circular_book/circular_book.otf") format("opentype"), url("/../fonts/circular_book/circular_book.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Didot";
-    src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"),
-        url("/../fonts/circular_book/circular_book.woff") format("woff"),
-        url("/../fonts/circular_book/circular_book.otf") format("opentype"),
-        url("/../fonts/circular_book/circular_book.ttf") format("truetype");
+	font-family: "Didot";
+	src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"), url("/../fonts/circular_book/circular_book.woff") format("woff"), url("/../fonts/circular_book/circular_book.otf") format("opentype"), url("/../fonts/circular_book/circular_book.ttf") format("truetype");
 }
 
 body {
@@ -202,80 +195,10 @@ footer {
 	min-width: 800px;
 }
 
-@media only screen and (max-width: 1000px) {
-	.hs {
-		grid-gap: 10px;
-		grid-template-rows: repeat(6, calc(50% - 20px));
-		grid-template-columns: 600px;
-		overflow-y: scroll;
-		scroll-snap-type: y proximity;
-		padding-bottom: calc(.75 * 120pt);
-		min-width: 500px;	
-		overflow-x: hidden;
-	}
-	.app {
-		width: 100%;
-		height: 400px;
-		overflow-y: scroll;
-	}
+.mobile-wrapper {
+	display: none;
+}
 
-	.front-page-container {
-		position: relative;
-		height: 100%;
-	}
-	
-	.front-page-centered-image {
-		display: block;
-		width: auto;
-		height: 100%;
-	}
-	
-	.overlay {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 1;
-		background-color: rgba(255, 255, 255, 0.1);
-	}
-	
-	.front-page-link {
-		color: white;
-		font-size: 0.8rem;
-		letter-spacing: 3px;
-		text-decoration: none;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		text-align: center;
-		cursor: url(cursor/moon+sparkle.png), auto;
-	}
-	.app {
-		width: 100%;
-		height: 500px;
-		overflow-y: scroll;
-	}
-	
-	.hs>li, .item {
-		scroll-snap-align: center;
-		display: flex;
-		position: relative;
-		overflow: hidden;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		background: black;
-		border-radius: 1px;
-		max-height: 450px;
-		max-width: 800px;
-	}
-  }
 
 
 .hs>li:last-child {
@@ -372,6 +295,68 @@ h1, h2, h3 {
 	cursor: url(cursor/moon+sparkle.png), auto;
 }
 
+@media only screen and (max-width: 1000px) {
+	.app {
+		display: none;
+	}
+	.mobile-wrapper {
+		display: block;
+	}
+
+	body {
+		overflow-y: scroll;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.mobile-main{
+		width: 70vw;
+	}
+
+	.mobile-item{
+		margin-top: 20px;
+		width: 100%;
+		overflow: hidden;
+		height: max-content;
+	}
+	.mobile-front-page-container {
+		position: relative;
+		height: 100%;
+	}
+	
+	.mobile-front-page-centered-image {
+		display: block;
+		width: 100%;
+		height: auto;
+
+	}
+	
+	.mobile-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+		transition: .5s ease;
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	
+
+	.footer-box {
+		padding-bottom: 20px;
+		height: 5vh;
+		position: static;
+		width: 70vw;
+	}
+
+	.front-page-link {
+		margin-top: 7px;
+	}
+	
+}
 /* about page */
 
 .bg {
@@ -784,8 +769,9 @@ h1, h2, h3 {
 }
 
 /* inspiration page */
-a.moodboard-button{
-	margin:1rem;
+
+a.moodboard-button {
+	margin: 1rem;
 	border: 1px solid rgb(222, 156, 178);
 	background-color: transparent;
 	border-radius: 3px;
@@ -803,7 +789,7 @@ a.moodboard-button{
 	font-family: "Circular Std Bold";
 }
 
-a.moodboard-button:hover{
+a.moodboard-button:hover {
 	border: 1px solid rgb(222, 156, 178);
 	background-color: rgb(222, 156, 178);
 	border-radius: 3px;
@@ -812,6 +798,7 @@ a.moodboard-button:hover{
 	text-align: center;
 	transition: all 0.2s;
 }
+
 /* pop-up page */
 
 .trigger_popup {
@@ -907,7 +894,7 @@ a.moodboard-button:hover{
 
 .nav-subtext:hover {
 	color: gainsboro;
-} 
+}
 
 /* computation page */
 
@@ -926,7 +913,6 @@ a.moodboard-button:hover{
 	height: 380px;
 	border-radius: 2px;
 	margin: 12px;
-	
 }
 
 .project-wrapper:hover {
@@ -935,7 +921,6 @@ a.moodboard-button:hover{
 	-moz-box-shadow: 10px 18px 8px 3px rgba(0, 0, 0, 0.25);
 	box-shadow: 10px 18px 8px 3px rgba(0, 0, 0, 0.25);
 }
-
 
 .browser-box {
 	background-size: cover;
@@ -949,7 +934,7 @@ a.moodboard-button:hover{
 }
 
 .browser-box-overlay {
-	background: linear-gradient(-50deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.3),rgb(0, 0, 0,1));
+	background: linear-gradient(-50deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 1));
 	background-blend-mode: multiply;
 	opacity: 1;
 	position: absolute;
@@ -976,7 +961,6 @@ a.moodboard-button:hover{
 	display: inline-block;
 }
 
-
 .column-left {
 	float: left;
 	width: 12%;
@@ -986,15 +970,15 @@ a.moodboard-button:hover{
 .link-center {
 	margin-right: auto;
 	margin-left: auto;
-	background:white;
+	background: white;
 	width: 40%;
 	border-radius: 3px;
-	height:20px;
-	margin-bottom:2px;
+	height: 20px;
+	margin-bottom: 2px;
 }
 
-a.project-link{
-	margin-left:1vw;
+a.project-link {
+	margin-left: 1vw;
 	text-decoration: none;
 	color: dimgray;
 	font-family: helvetica;
@@ -1002,13 +986,13 @@ a.project-link{
 	cursor: pointer;
 }
 
-a.project-link:hover{
+a.project-link:hover {
 	color: #7fa8e6;
 }
 
 .cs-project-content {
-	margin-top:20px;
-	margin-bottom:0px;
+	margin-top: 20px;
+	margin-bottom: 0px;
 	position: absolute;
 	left: 30px;
 	top: 10px;
@@ -1022,13 +1006,13 @@ a.project-link:hover{
 	font-family: "Circular Std Book";
 	font-size: 1.9rem;
 	line-height: 1;
-	width:100%;
+	width: 100%;
 }
 
 .cs-project-subtitle {
 	margin-top: 0.5rem;
 	text-decoration: none;
-	color:lavenderblush;
+	color: lavenderblush;
 	font-family: times;
 	font-size: 1rem;
 }
@@ -1039,8 +1023,7 @@ a.project-link:hover{
 	color: white;
 	font-family: times;
 	font-size: 0.8rem;
-	width:80%;
-
+	width: 80%;
 }
 
 a.cs-description {
@@ -1049,5 +1032,5 @@ a.cs-description {
 	font-style: italic;
 	color: azure;
 	font-size: 0.8rem;
-	cursor:pointer;
+	cursor: pointer;
 }
