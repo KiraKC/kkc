@@ -358,6 +358,10 @@ h1, h2, h3 {
 	.front-page-link {
 		margin-top: 7px;
 	}
+
+	.front-page-link {
+		font-size: 1.2rem;
+	}
 	
 }
 /* about page */
