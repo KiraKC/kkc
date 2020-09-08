@@ -141,7 +141,7 @@ footer {
 /** title*/
 
 .title-white {
-	margin-top: 20%;
+	margin-top: 50px;
 	text-decoration: none;
 	color: white;
 	font-family: didot;
@@ -158,7 +158,7 @@ footer {
 	font-style: italic;
 	text-align: center;
 	font-size: 120%;
-	margin-top: 2%;
+	margin-top: 10px;
 	margin-bottom: 0px;
 	z-index: 9998;
 }
@@ -349,7 +349,10 @@ h1, h2, h3 {
 		padding-bottom: 20px;
 		height: 5vh;
 		position: static;
-		width: 70vw;
+	}
+
+	.seventy-width {
+		width: 70vw !important;
 	}
 
 	.front-page-link {
@@ -369,7 +372,6 @@ h1, h2, h3 {
 
 .about-text {
 	margin-top: 0%;
-	margin-left: 5%;
 	display: flex;
 	width: 800px;
 	height: 200px;
@@ -381,7 +383,7 @@ h1, h2, h3 {
 	color: white;
 	font-family: didot;
 	font-style: italic;
-	text-align: center;
+	text-align: left;
 	font-size: 500%;
 	cursor: url(cursor/moon+sparkle.png), auto;
 	z-index: 9999;
@@ -395,13 +397,22 @@ h1, h2, h3 {
 	margin-bottom: 0px;
 	z-index: 9998;
 	font-style: oblique;
-	text-align: justify;
 	margin-left: 2%;
 }
 
 .about-link:link {
 	cursor: url(cursor/waning-gibbous-moon-symbol_1f316.png), auto;
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	.about-text {
+		margin-top: 0%;
+		display: flex;
+		width: 70vw;
+		align-items: flex-start;
+	}
+	
 }
 
 /* inspiration page */
