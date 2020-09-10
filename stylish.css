@@ -485,12 +485,11 @@ h1, h2, h3 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: -1;
+	z-index: 9999;
 }
 
 .monitor {
-	margin-top: 2vh;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 	width: 98%;
 	height: auto;
 	overflow: hidden;
@@ -507,6 +506,12 @@ h1, h2, h3 {
 	-o-user-drag: none;
 	-ms-user-drag: none;
 }
+
+ @media only screen and (max-width:800px) {
+	.monitor {
+		display:none;
+	}
+ }
 
 .film-project-list {
 	display: flex;
