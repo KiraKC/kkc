@@ -798,6 +798,7 @@ h1, h2, h3 {
 	-ms-user-drag: none;
 }
 
+
 .stage-description {
 	width: 100%;
 	color: burlywood;
@@ -810,6 +811,41 @@ h1, h2, h3 {
 	text-decoration: none;
 	z-index: 9999;
 }
+
+
+.screen-film-overlay {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+}
+
+.screen-monitor {
+	margin-bottom: 5vh;
+	width: 98%;
+	height: auto;
+	z-index: 9999;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+}
+
+@media only screen and (max-width:800px) {
+	.screen-monitor {
+		display:none;
+	}
+ }
 
 /* inspiration page */
 
