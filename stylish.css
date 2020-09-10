@@ -364,17 +364,18 @@ h1, h2, h3 {
 	}
 
 	.footer-link {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	
 	.footer-text {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	.footer-box {
 		padding-bottom: 20px;
 		height: 10vh;
 		position: static;
+		min-width: 300px;
 	}
 
 	.footer-left {
