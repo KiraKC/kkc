@@ -9,6 +9,19 @@ built by K.K.C. Please do not copy this code without express permission -->
 	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="../stylish.css" />
+	<script>
+		$(window).load(function () {
+			$(".trigger_popup").click(function () {
+				$('.popup').show();
+			});
+			$('.popup').click(function () {
+				$('.popup').hide();
+			});
+			$('.popupClose').click(function () {
+				$('.popup').hide();
+			});
+		});
+	</script>
 </head>
 <body style="background-color: rgb(255, 217, 243); margin-left: 50px;margin-right: 50px;">
 
@@ -36,20 +49,44 @@ built by K.K.C. Please do not copy this code without express permission -->
 			</div>
 		</div>
 	
-	<div>
 
-	</div>
+		<div class="popup">
+			<span class="helper"></span>
+			<div>
+				<div class="popupClose">&times;</div>
+				<div class="content">
+					<p class="nav-title"> K </p><br>
+					<a class="nav-text" href="index.html"> ♔<br> H O M E   </a> <br>
+					<a class="nav-text" href="about/overview.html"> A b o u t </a> <br>
+					<a class="nav-text" href="filmmaking/overview.html"> F i l m </a> <br>
+					<a class="nav-text" href="dance/overview.html"> D a n c e </a> <br>
+					<a class="nav-subtext" href="dance/stage.html"> ☞ on stage </a><br>
+					<a class="nav-subtext" href="dance/screen.html"> ☞  on screen </a> <br>
+					<a class="nav-text" href="computation/overview.html"> C o m p u t a t i o n </a> <br>
+					<a class="nav-text" href="inspiration/overview.html"> I n s p i r a t i o n </a> <br>
+					<a class="nav-subtext" href="inspiration/moodboards.html"> ☞  moodboards </a> <br>
+					<a class="nav-subtext" href="image-credits.html"> ☞  image credits </a> <br>
+					<a class="nav-text" href="contact/overview.html"> C o n t a c t  </a> <br>
+					<p class="footer-text" href="https://kirakellyclarke.com" style="color:black; 
+					font-style:italic" > designed & built with   ♥    by Kira  </a> <br>
+										<div class = "whitespace"></div>		
+
+				</div>			
+			</div>
+		</div>
+
+		<div class="footer-box seventy-width">
+			<div class="footer-left">
+				<a style= "color:rgb(240, 172, 202);" class="footer-text" href="../index.html"> Kira Kelly Clarke © 2020</a> <br>
+				<a style= "color:rgb(240, 172, 202);" href="../image-credits.html" class="footer-link"> image credits </a>
+			</div>
+			<div class="footer-right">
+				<div style= "color:rgb(240, 172, 202);" class="trigger_popup footer-text"> Navigation</div> <br>
+				<a style= "color:rgb(240, 172, 202);" href="../contact/overview.html" class="footer-link"> contact me </a>
+			</div>
+		</div>
+
 </body>
 <footer>
-	<div class="footer-box">
-		<div class="footer-left">
-					<a class="footer-text" href="http://kirakellyclarke.com" style= "color:rgb(240, 172, 202);"> Kira Kelly Clarke © 2020</a> <br>
-					<a href="/contact/overview.html" class="footer-link" style= "color:rgb(240, 172, 202);"> contact </a>
-		</div>
-		<div class="footer-right">
-			<a class="footer-text" href="http://kirakellyclarke.com" style= "color:rgb(240, 172, 202);"> Thank you for visiting!</a> <br>
-			<a href="../image-credits.html" class="footer-link" style= "color:rgb(240, 172, 202);"> image credits </a>
-		</div>
-	</div>
 </footer>
 </html>
