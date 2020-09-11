@@ -9,23 +9,19 @@
 }
 
 body {
-	margin-top: 2%;
+	margin-top: 10px;
 	background-color: black;
 	margin-left: 100px;
 	margin-right: 100px;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
-
-header {
-	margin-top: 8%;
-}
-
 
 
 .footer-box {
 	display: flex;
 	margin-top: 5%;
-	margin-bottom: 2%;
+	margin-bottom: 5%;
 	height: 5vh;
 	position: static;
 	width: 100%;
@@ -358,6 +354,7 @@ h1, h2, h3 {
 	
 	.subtitle-white {
 		font-size: 25px;
+		margin-bottom: 50px;
 	}
 
 	.footer-link {
