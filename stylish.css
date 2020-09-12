@@ -8,6 +8,10 @@
 	src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"), url("/../fonts/circular_book/circular_book.woff") format("woff"), url("/../fonts/circular_book/circular_book.otf") format("opentype"), url("/../fonts/circular_book/circular_book.ttf") format("truetype");
 }
 
+html{
+	width: 100%;
+}
+
 body {
 	margin-top: 10px;
 	background-color: black;
