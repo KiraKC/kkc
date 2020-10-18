@@ -690,16 +690,7 @@ h1, h2, h3 {
 	align-items: baseline;
 }
 
-@media (min-width:800px) {
-	.dance-project-list {
-		display: block;
-		justify-content: center;
-	}
-	.dance-projects {
-		display: block;
-		width: 300px;
-	}
-}
+
 
 .dance-title {
 	width: 20%;
@@ -717,6 +708,32 @@ h1, h2, h3 {
 	display: static;
 	width: auto;
 	height: 100%;
+}
+
+@media (max-width: 700px) {
+	body {
+		overflow: show;
+	}
+	.footer-right {
+		display: none;
+	}
+	.footer-left {
+		display: none;
+	}
+	.dance-project-list {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	.dance-projects {
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+		display: flex;
+		width: 100%;
+		height: 30%;
+		align-items: baseline;
+	}
 }
 
 .dance-details img {
@@ -748,7 +765,7 @@ h1, h2, h3 {
 	height: auto;
 }
 
-.right-margin {
+.right-margin{
 	margin-right: 2vw;
 }
 
@@ -777,6 +794,8 @@ h1, h2, h3 {
 	height: 100%;
 }
 
+
+
 .stage-details img {
 	width: auto;
 	height: 350px;
@@ -795,7 +814,6 @@ h1, h2, h3 {
 	-o-user-drag: none;
 	-ms-user-drag: none;
 }
-
 
 .stage-description {
 	width: 100%;
