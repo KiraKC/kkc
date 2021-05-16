@@ -1009,6 +1009,8 @@ a.moodboard-button:hover {
 	height: 380px;
 	border-radius: 2px;
 	margin: 12px;
+	transition: .5s ease;
+
 }
 
 .project-wrapper:hover {
@@ -1030,7 +1032,7 @@ a.moodboard-button:hover {
 }
 
 .browser-box-overlay {
-	background: linear-gradient(-50deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 1));
+	background: linear-gradient(-50deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 1));
 	background-blend-mode: multiply;
 	opacity: 1;
 	position: absolute;
