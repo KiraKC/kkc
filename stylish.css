@@ -1096,6 +1096,14 @@ a.project-link:hover {
 	width: 65%;
 }
 
+.cs-proj-information{
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.cs-proj-information:hover{
+	opacity: 1;
+}
 .cs-project-title {
 	text-decoration: none;
 	color: white;
