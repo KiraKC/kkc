@@ -289,7 +289,6 @@ h1, h2, h3 {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
-	cursor: url(cursor/moon+sparkle.png), auto;
 }
 
 @media only screen and (max-width: 1000px) {
