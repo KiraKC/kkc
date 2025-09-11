@@ -1,0 +1,138 @@
+.hcard-container {
+    position: relative;
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hcard-background {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; 
+}
+
+.hcard-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+/* Pseudo-element blur effect */
+.hcard-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: opacity 0.8s ease-in-out; 
+    z-index: 3;
+}
+
+.hcard-content.hovered::before,
+.hcard-container.clicked .hcard-content::before {
+    opacity: 0.5; 
+}
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/images_gifs/film-monitor.gif"); 
+    background-size: contain;	
+    background-repeat: no-repeat;	
+    position: absolute;	
+    color: white;	
+    opacity: 0;	
+    pointer-events: none; 
+    transition: opacity 0.3s ease-in-out;
+    z-index: 4; 
+}
+
+
+.hcard-content.hovered .overlay {
+    opacity: 1;	
+    pointer-events: auto; 
+}
+
+.hcard-container.clicked .overlay {
+    opacity: 0; 
+    pointer-events: none;
+}
+
+.hcard-details {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    gap: 0px; 
+    /* padding-bottom: 15px;  */
+    z-index: 5;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+    line-height: 1;
+}
+
+.hproject-title{
+    font-family: 'A';
+    font-size: 2.5rem;
+    margin-bottom: 0px; 
+}
+
+.hproject-description{
+    margin: 0;
+    font-family: 'U', sans-serif;
+    font-size: 0.7rem;
+    margin-bottom: 2px; 
+}
+
+.hcard-details.clicked {
+    opacity: 1;
+}
+
+
+.close-btn-hcard { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 16px; 
+    font-weight: bold;
+    line-height: normal;
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    color: white; 
+    padding: 0;
+    z-index: 6; /* Ensure button is above other elements */
+}
+
+.tag-group {
+    margin-top: auto; 
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}

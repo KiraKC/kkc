@@ -1,0 +1,76 @@
+.nav-menu-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50px; 
+    right: 50px;
+    margin-top: 40px; 
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 1001; /* Above sticky container */
+}
+
+@media screen and (max-width: 375px) {
+    .nav-menu-wrapper {
+        align-items: flex-start;
+        position: absolute;
+        top: 80px; 
+        left: 50px; 
+        right: auto;
+        gap: 10px;
+    }
+}
+
+.episodes-container {
+    overflow-y: scroll;
+    position: relative;
+    height: 200px;
+    padding: 15px 15px;
+    z-index: 2; 
+
+}
+  
+.contact-subtitle {
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.gradient-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35%;
+    background: linear-gradient(to top, rgba(255, 255, 240, 1), rgba(255, 255, 255, 0.0));
+    pointer-events: none; 
+    z-index: 10; 
+}
+
+.selected {
+    font-style: italic;
+}
+
+.divider {
+    border-bottom: 0.5px solid #000;
+    width: 100%; 
+    margin: 5px 0;
+    flex-grow: 1; 
+  }
+
+  .normal {
+    font-style:normal;
+  }
+
+.vertical-marquee-container.modal-hovered.marquee-paused {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><text y="24" font-size="18" fill="white">▶</text></svg>'), auto;
+}
+.vertical-marquee-container.modal-hovered.marquee-playing {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24" fill="white">⏸</text></svg>'), auto;
+}
+
+.vertical-marquee-container.modal-hovered a {
+    cursor: pointer !important;
+}

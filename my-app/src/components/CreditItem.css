@@ -1,0 +1,54 @@
+
+img.credit-image{
+    filter: grayscale(1) contrast(100%);
+
+}
+
+.credit-image {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+
+}
+.credit-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.credit-item-role {
+  font-size: 1.2em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.credit-item-details {
+  font-size: 1em;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: white;
+}
+
+.credit-item-details a,
+.credit-item-details a:visited,
+.credit-item-details a:active {
+  color: rgb(250, 242, 229) !important;
+  font-family: 'JEANLUC';
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.credit-item-container {
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .credit-item-title {
+    font-family: 'P', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1;
+
+  }
+  
