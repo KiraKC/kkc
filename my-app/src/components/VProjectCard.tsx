@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import './VProjectCard.css';
 import classNames from 'classnames';
 import { TagGroup } from './Tag';
+import { ImSpades, ImHeart, ImClubs, ImDiamonds } from 'react-icons/im';
 
-const colorSymbols = ["♦", "♥"];
-const blackSymbols = ["♣", "♠"];
-
+const colorSymbols = [ImSpades, ImHeart];
+const blackSymbols = [ImClubs, ImDiamonds];
 interface VProjectCardProps {
   bgColor: string;
   title?: string;
@@ -22,11 +22,17 @@ function VProjectCard(props: VProjectCardProps) {
   const { bgColor, title, subtitle, description, color: symbolColor, value: cardVal, flipped: flippedbgColor, tags, link } = props;
   const [isFlipped, setIsFlipped] = useState(false);
   
-  const [cSymbol] = useState(colorSymbols[Math.floor(Math.random() * 2)]);
-  const [bSymbol] = useState(blackSymbols[Math.floor(Math.random() * 2)]);
-  
-  const symbolBool = symbolColor;
-  const cardSymbol = symbolBool === "card-black" || symbolBool === "card-white" ? bSymbol : cSymbol;
+const [cSymbol] = useState(() => {
+  const Icon = colorSymbols[Math.floor(Math.random() * colorSymbols.length)];
+  return Icon;
+});
+const [bSymbol] = useState(() => {
+  const Icon = blackSymbols[Math.floor(Math.random() * blackSymbols.length)];
+  return Icon;
+});
+
+const CardSymbol = (symbolColor === "card-black" || symbolColor === "card-white") ? bSymbol : cSymbol;
+
 
   const handleCardClick = () => {
     setIsFlipped(!isFlipped);
@@ -44,12 +50,12 @@ function VProjectCard(props: VProjectCardProps) {
       <div className={classNames("flip-card-inner", { 'flipped': isFlipped })}>
         <div className={classNames("card-side", "card-front", bgColor)}>
           <div className={symbolColor}>
-            <div className="card-top">
-              {cardVal + " " + cardSymbol}
-            </div>
-            <div className="card-bottom">
-              {cardVal + " " + cardSymbol}
-            </div>
+          <div className="card-top">
+            {cardVal} {CardSymbol && <CardSymbol />}
+          </div>
+          <div className="card-bottom">
+            {cardVal} {CardSymbol && <CardSymbol />}
+          </div>
           </div>
         </div>
         <div className={classNames("card-side", "card-back", flippedbgColor)}>

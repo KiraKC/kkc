@@ -37,7 +37,7 @@ const swiperSlides1 = [
       { text: 'code' },
      { text: 'react.js' },
        { text: 'concept' }],
-    link: 'kirakellyclarke.com' ,
+    link: 'https://www.kirakellyclarke.com' ,
   },
   
    { value: "A", color: "card-red", bgColor: "nlptitle-bg", flipped: "nlp-bg" ,
