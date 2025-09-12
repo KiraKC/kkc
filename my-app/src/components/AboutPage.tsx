@@ -40,7 +40,7 @@ const dancerResume = (
 
 const directContent = (
   <div>
-    art direction · videography
+    creative direction · videography
     <br/>
     for freelance projects & communications work
   </div>
