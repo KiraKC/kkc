@@ -72,7 +72,7 @@ const contactMenus = [
     episodeInfoText: "LINKEDIN",
     titleText: "Professional",
     titleInfoText: "/in/kkc",
-    titleInfoTextLink: "https://www.linkedin.com/in/kira-kelly-clarke",
+    titleInfoTextLink: "https://www.linkedin.com/in/kira-k-clarke",
   },
   {
     id: "c",
